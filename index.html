@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experimento interativo de animação com GSAP">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>
     <script src="script.js" defer></script>
-    <title>Animacao GSAP</title>
+    <title>GSAP Playground</title>
 </head>
 <body>
     <div class="container">
-        <div class="quadrado"></div>
+        <header class="cabecalho">
+            <span class="etiqueta">GSAP Playground</span>
+            <h1>Movimento que<br><em>ganha vida.</em></h1>
+            <p>Uma experiência simples para explorar animações suaves e cheias de personalidade.</p>
+        </header>
+
+        <main class="palco">
+            <div class="brilho" aria-hidden="true"></div>
+            <button class="quadrado" type="button" aria-label="Animar o quadrado">
+                <span>clique</span>
+            </button>
+            <span class="dica">Clique no bloco para animar</span>
+        </main>
+
+        <footer>
+            <span>01</span>
+            <div class="linha"></div>
+            <span>INTERAÇÃO</span>
+        </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
 </body>
 </html>
